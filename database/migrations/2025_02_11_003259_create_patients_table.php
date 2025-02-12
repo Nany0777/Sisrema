@@ -22,7 +22,7 @@ return new class extends Migration
             $table->enum("nacionalidad", ['Venezolano', 'Extranjero']);
             $table->string("ocupacion")->nullable();
             $table->string("representante");
-            $table->integer("telefono");
+            $table->bigInteger("telefono");
             $table->boolean("embarazo")->default(0);
             $table->boolean("madre_lactante")->default(0);
             $table->text("direccion");
