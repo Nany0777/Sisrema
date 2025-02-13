@@ -58,17 +58,17 @@
     </section>
 
     @push('styles')
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+        <link rel="stylesheet" href="{{ asset('css/dataTables.bootstrap5.min.css') }}">
     @endpush
 
     @push('scripts')
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-        <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
+        <script src="{{ asset('js/dataTables.bootstrap5.min.js') }}"></script>
         <script>
             $(document).ready(function() {
                 $('#recordsTable').DataTable({
-                    
+
                 });
             });
         </script>
