@@ -47,7 +47,7 @@ class DoctorController extends Controller
             DB::commit();
 
             return redirect()->route('doctors.index')
-                ->with('success', 'Paciente creado exitosamente.');
+                ->with('success', 'Doctor creado exitosamente.');
 
         } catch (\exception $e) {
             DB::rollBack();

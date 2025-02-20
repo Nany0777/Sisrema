@@ -14,6 +14,16 @@
                 <div class="row">
                     <div class="col-md-12">
 
+                        <div class="small-box bg-success">
+                            <div class="inner">
+                                <h3>{{ $pacientes }}</h3>
+                                <p>Pacientes Registrados</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
